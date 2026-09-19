@@ -8,12 +8,8 @@
 :root {
     --color: rgb(3, 0, 0);
     --background-color: rgb(65, 211, 255);
-    --border: 1px solid black;
     --heading-font: "Poppins", "Montserrat", "Times New Roman";
     --body-font: "Inter", "Open Sans", Arial;
-    --margin: 10px;
-    --img-box-shadow: 0 0 30px grey;
-    --height: auto;
 
 }
 
@@ -58,7 +54,7 @@ article {
 .hero img {
     display: block;
     width: 100%;
-    height: var(--height);
+    height: auto;
 
 }
 
