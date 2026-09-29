@@ -10,6 +10,7 @@
     --background-color: rgb(65, 211, 255);
     --heading-font: "Poppins", "Montserrat", "Times New Roman";
     --body-font: "Inter", "Open Sans", Arial;
+    --other-background-color: white;
 
 }
 
@@ -83,7 +84,7 @@ header img {
     padding: 10px;
     font-size: 1.2rem;
     color: black;
-    background-color: white;
+    background-color: var(--other-background-color);
     border: 1px black solid;
 }
 
@@ -95,7 +96,7 @@ h1 {
     width: 100%;
     text-align: center;
     opacity: 0.7;
-    background-color: whitesmoke;
+    background-color: var(--other-background-color);
     color: var(--color);
 
 }
@@ -205,5 +206,5 @@ footer p {
 .socialmedia img {
 
     max-width: 5rem;
-    background-color: white;
+    background-color: var(--other-background-color);
 }
