@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+header {
+    margin: auto;
+    width: 700px;
+    color: blueviolet;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: rgb(218, 214, 214);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+legend {
+
+    padding: 1rem;
+    color: blueviolet;
+    font-size: 1.3em;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+label {
+    text-align: left;
+    padding-right: 2rem;
+}
+
+input,
+select,
+textarea {
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    width: auto;
+    height: 3.5rem;
+    background-color: blueviolet;
+    color: white;
+    font-size: 100%;
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 700px;
+    color: blueviolet;
+    text-align: center;
+    font-size: 1em;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+
+}
+
+.column2 {
+    grid-template-columns: 1fr 1fr;
+    margin: .5rem 0 0;
+    padding-right: 2rem;
+    width: 100%;
+}
