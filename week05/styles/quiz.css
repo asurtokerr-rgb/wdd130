@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    margin: auto;
+    color: blueviolet;
+    text-align: center;
+    font-size: xxx-large;
+    width: 650px;
+    height: auto;
+
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: rgb(218, 214, 214);
+    display: grid;
+    font-size: larger;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+
+}
+
+legend {
+
+    padding: 1rem;
+    color: blueviolet;
+    font-size: 1.3em;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    border: 1px solid gray;
+
+}
+
+button {
+    margin-top: 1.2rem;
+    font-size: larger;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid black;
+}
+
+footer {
+    margin: 0 auto;
+    width: 700px;
+    color: blueviolet;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+p {
+    background-color: black;
+    color: white;
+    font-size: medium;
+}
