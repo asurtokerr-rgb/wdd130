@@ -35,8 +35,7 @@
         <div class="mid">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2652.600561220601!2d121.00693101945042!3d14.583888840520036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1791090963313!5m2!1sen!2sph"
-              width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+              class="iframe" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
             <form>
                 <label for="name">Name</label>
@@ -44,11 +43,14 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email">
                 <label for="purpose">Message purpose</label>
-                <label><input type="radio" name="purpose" value="General Inquiry">General
+                <label><input type="radio" name="purpose" id="purpose"
+                      value="General Inquiry">General
                     Inquiry</label>
-                <label><input type="radio" name="purpose" value="Reservation Question">Reservation
+                <label><input type="radio" name="purpose" id="purpose"
+                      value="Reservation Question">Reservation
                     Question</label>
-                <label><input type="radio" name="purpose" value="Website Suggestion">Website
+                <label><input type="radio" name="purpose" id="purpose"
+                      value="Website Suggestion">Website
                     Suggestion</label>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="4"
