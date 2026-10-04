@@ -42,6 +42,7 @@ article {
 
 .hero {
     position: relative;
+
 }
 
 .hero img {
@@ -89,9 +90,6 @@ header img {
 }
 
 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 10px;
     width: 100%;
     text-align: center;
@@ -175,6 +173,8 @@ h1 {
 
     width: 10rem;
     height: 8rem;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 footer {
@@ -207,4 +207,85 @@ footer p {
 
     max-width: 5rem;
     background-color: var(--other-background-color);
+}
+
+.info {
+    text-align: center;
+    padding: 0px;
+    line-height: 0;
+    font-size: medium;
+    position: relative;
+
+}
+
+iframe {
+    width: 100%;
+    grid-column: 1/2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/2;
+    margin-left: 2rem;
+    height: 100%;
+    padding: 2rem;
+    font-family: inherit;
+    font-size: larger;
+    line-height: 1.5rem;
+}
+
+.mid {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+
+}
+
+legend {
+
+    padding: 1rem;
+    color: var(--background-color);
+    font-size: 1.3em;
+}
+
+button {
+    margin-top: 1.2rem;
+    font-size: large;
+    background-color: var(--background-color);
+    color: rgb(0, 0, 0);
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color: var(--background-color);
+    position: relative;
+    right: 15px;
+}
+
+.employees h2 {
+    grid-column-start: span 5;
+    justify-self: center;
+
+}
+
+.employees img {
+    width: 10rem;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.employees figcaption {
+    margin-left: 2rem;
 }
