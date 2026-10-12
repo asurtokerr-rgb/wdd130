@@ -11,20 +11,17 @@
     --heading-font: "Poppins", "Montserrat", "Times New Roman";
     --body-font: "Inter", "Open Sans", Arial;
     --other-background-color: white;
+    --secondary-color: #c2c2b5;
+    --margin-top-bottom: 10px 0 10px 0;
 
 }
 
 body {
     font: var(--body-font);
     color: var(--color);
-
-}
-
-header,
-main,
-footer {
     width: 840px;
     margin: auto;
+
 }
 
 h1,
@@ -49,6 +46,7 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    padding: auto;
 
 }
 
@@ -104,13 +102,18 @@ h1 {
     top: 50px;
     left: 10px;
     padding: 1px;
-    background-color: #c27f27;
+    background-color: var(--secondary-color);
     float: left;
 }
 
 .hero article img {
     width: 125px;
     float: right;
+
+}
+
+.hero h1 {
+    position: absolute;
 
 }
 
@@ -239,6 +242,47 @@ form {
 .mid {
     display: grid;
     grid-template-rows: 1fr;
+    margin: 10px 0 10px 0;
+}
+
+.mid form {
+    background-color: var(--background-color);
+}
+
+.mid form button {
+    background-color: var(--secondary-color);
+}
+
+.one {
+    grid-column: 1/2;
+}
+
+.one img {
+    width: 100%;
+    border: solid var(--background-color) 10px;
+}
+
+.one h2 {
+    position: absolute;
+    justify-self: center;
+    color: black;
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+.one button {
+    max-width: 7rem;
+    justify-self: center;
+    position: absolute;
+    margin-top: 80px;
+
+}
+
+.one button a {
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+
 }
 
 fieldset {
@@ -264,7 +308,7 @@ button {
     color: rgb(0, 0, 0);
 }
 
-.employees {
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -273,13 +317,13 @@ button {
     right: 15px;
 }
 
-.employees h2 {
+.container h2 {
     grid-column-start: span 5;
     justify-self: center;
 
 }
 
-.employees img {
+.container img {
     width: 10rem;
     height: 8rem;
     align-items: center;
@@ -287,6 +331,80 @@ button {
     margin-left: 2rem;
 }
 
-.employees figcaption {
+.container figcaption {
     margin-left: 2rem;
+
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.beginner {
+    grid-column: 1/2;
+    margin-left: 20px;
+}
+
+.inter {
+    grid-column: 2/3;
+    margin-left: 10px;
+}
+
+.inter img {
+    width: 100%;
+    height: 55%;
+}
+
+.advance {
+    grid-column: 3/3;
+    margin-left: 10px;
+}
+
+.offers img {
+    max-width: 200px;
+    margin: 10px auto 10px 10px;
+    border: solid var(--background-color) 5px;
+}
+
+table {
+    width: 100%;
+    border: 2px solid grey;
+    margin: var(--margin-top-bottom)
+}
+
+th,
+td {
+
+    border: 1px solid rgb(122, 122, 122);
+    text-align: center;
+    padding: 10px;
+}
+
+thead th,
+tfoot tr {
+    padding: 10px;
+    background-color: var(--background-color);
+    color: black;
+    font-weight: 700;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+}
+
+.book button {
+    width: 200px;
+    margin-right: 150px;
+    margin-bottom: 10px;
+
+}
+
+.book button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+
 }
